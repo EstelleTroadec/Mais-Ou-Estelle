@@ -116,15 +116,16 @@
   border-radius: 0.4rem;
 }
 
-.nav_list li {
+.nav__list li {
   margin-bottom: 1.5rem;
 }
 
 .active {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  padding: 1rem;
   background-color: var(--light-redish);
 
   justify-content: space-around;
@@ -132,7 +133,9 @@
   position: absolute;
   top: 8.2rem;
   right: 0;
-  width: 40%;
+  width: 50%;
+
+  border: solid 2px var(--redish);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 
 }
