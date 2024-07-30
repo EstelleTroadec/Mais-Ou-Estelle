@@ -14,12 +14,12 @@ Voyageurs solitaires à budget limité (étudiants, jeunes diplômés, personnes
 
 ### Langages
 
-HTML5
-CSS3
-JavaScript
+- HTML5
+- CSS3
+- JavaScript
 
 ### Outils
 
-Visual Studio Code
-Git / Github
-Terminal
+- Visual Studio Code
+- Git / Github
+- Terminal
