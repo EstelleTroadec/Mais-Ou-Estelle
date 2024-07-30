@@ -1,27 +1,12 @@
 /* text */
 @font-face {
-    font-family: 'Noto Sans';
-    src: url('../fonts/NotoSans.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'Noto Sans';
-    src: url('../fonts/NotoSans-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'Noto Sans';
-    src: url('../fonts/NotoSans-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-  }
+  font-family: 'Chelsea Market';
+  src: url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
   
   /* icons */
   @font-face {
@@ -34,7 +19,7 @@
   
   [class^="icon-"], [class*=" icon-"] {
     font-family: 'icomoon' !important;
-    speak: never;
+    /* speak: never; */
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -65,3 +50,4 @@
   .icon-sun:before {
     content: "\e906";
   }
+

@@ -1,0 +1,215 @@
+/* common */
+ 
+  html {
+    --light-redish: #f0cdcf;
+    --redish: #b58284;
+    --dark-redish: #903329;
+    --light-leave-color: #65947b;
+    --leave-color: #4C6D5A;
+    --dark-leave-color: #283d30;
+    --sandy-color: #fae8d3;
+
+  }
+  
+  body {
+    font-family: 'Noto Sans', sans-serif;
+    transition: background-color .3s;
+  }
+  
+  
+  p {
+    line-height: 1.3;
+  }
+  
+  .container {
+    width: 96%;
+    max-width: 70em;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 60em) {
+    a:hover, button:hover {
+      color: var(--light-leave-color);
+    }
+  }
+  
+
+
+  /* HEADER */
+
+.header {
+  background-color: var(--redish)
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__cloud {
+  fill: var(--light-redish);
+  width: 15rem;
+  padding: 1rem;
+}
+
+.header__logo {
+  position: absolute;
+  top: 0.2rem;
+  left: 1.8rem;
+}
+
+.header__title {
+  font-family: 'Chelsea Market', sans-serif;
+  color: rgb(56, 56, 56);
+  font-size: 2.5rem;
+
+  width: 15rem;
+
+  position: absolute;
+  top: 4.2rem;
+  left: 1.8rem;
+}
+
+.header__title a {
+  color: inherit; /* inherit color from parent */
+  text-decoration: none;
+}
+
+.header__title a:hover {
+  color: inherit; /* keep the same color when hovered */
+  cursor: pointer;
+}
+
+
+.header__subtitle {
+  font-family: 'amatic sc', sans-serif;
+  color: rgb(56, 56, 56);
+  font-weight: 700;
+
+  position: relative;
+  margin-left: 7rem;
+  font-size: 1.5rem;
+  box-sizing: border-box; 
+  overflow: visible; 
+  visibility: inherit;
+}
+
+.burger-menu {
+  display: block;
+  font-size: 2rem;
+  background-color: #d48ddd;
+  border: solid 2px var(--light-redish);
+  border-radius: 0.4rem;
+  margin-right: 1.2rem;
+  color: var(--light-redish);
+  padding: 0.5rem;
+}
+
+.nav__list {
+  list-style: none;
+  display: none; /* Hide the menu by default */
+  font-family: 'Amatic SC', sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  
+  border-radius: 0.4rem;
+}
+
+.nav_list li {
+  margin-bottom: 1.5rem;
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-redish);
+
+  justify-content: space-around;
+
+  position: absolute;
+  top: 8.2rem;
+  right: 0;
+  width: 40%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+
+}
+
+/* for desktop */
+@media (min-width: 769px) {
+  
+  .header__cloud {
+    fill: var(--light-redish);
+    width: 15rem;
+    padding: 2rem;
+  }
+  
+  .header__logo {
+    position: absolute;
+    top: 1.1rem;
+    left: 2.8rem;
+  }
+  
+  .header__title {
+    font-family: 'Chelsea Market', sans-serif;
+    color: rgb(56, 56, 56);
+    font-size: 2.5rem;
+  
+    width: 15rem;
+  
+    position: absolute;
+    top: 5.2rem;
+    left: 2.8rem;
+  }
+
+
+  .burger-menu {
+    display: none;
+}
+
+  .nav {
+      margin: auto;
+      bottom: 0;
+  }
+
+  .nav__list {
+    list-style: none;
+    display: flex;
+    font-family: 'Amatic SC', sans-serif;
+    
+  }
+  
+  .nav__list li {
+    position: relative;
+    font-size: 2.3rem;
+    margin-right: 9rem;
+  }
+  
+  /* add a line above each elements of the nav list */
+  .nav__list li::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 2px; /* line height */
+    background-color: #000;
+  }
+
+  .nav__list li:hover::before {
+    background-color: var(--light-leave-color); /* change the color of the line when hovered */
+  }
+
+
+  
+  .nav__list li:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    
+  }
+}
+
+
+

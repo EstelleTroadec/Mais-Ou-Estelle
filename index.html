@@ -1,14 +1,117 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mais Où Estelle</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Chelsea+Market&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo.webp" type="image/x-icon">
 </head>
+
 <body>
-    <h1> hello world !</h1>
+
+    <header class="header">
+        <div class="header__container">
+            
+            <div class="header__cloud">
+                <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 348.346 212.916"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 348.346 212.916" role="presentation"
+                    aria-hidden="true">
+                    <g>
+                        <path
+                            d="M347.779 150.733c-3.759-26.573-25.041-43.354-49.967-46.302.207-2.561.31-5.157.31-7.775C298.121 43.275 254.845 0 201.46 0c-41.16 0-76.309 25.732-90.25 61.981-15.592-7.006-33.435-9.102-50.824-4.899C25.351 65.549 0 97.88 0 133.896c0 46.834 39.167 79.02 83.868 79.02h206.53c33.755 0 62.368-26.981 57.381-62.183z">
+                        </path>
+                    </g>
+                </svg>
+
+                <img class="header__logo" src="img/logo.webp" alt="logo colibri">
+
+                <h1 class="header__title">
+                    <a href="#" target="_self">MAIS Où EST(-)ELLE ?</a>
+                </h1>
+                <h6 class="header__subtitle">
+                    Idées de voyages
+                 </h6>
+
+            </div>
+            <button class="burger-menu" aria-label="Menu">
+                &#9776;
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li id="nav__element">
+                        <p>— Europe —</p>
+
+
+                        <ul aria-hidden="true" style="display:none">
+                            <li><a data-testid="linkElement" href="https://maisouestelle.wixsite.com/voyages/espagne"
+                                    target="_self" class="" tabindex="-1">Espagne</a></li>
+                            <li><a data-testid="linkElement" href="https://maisouestelle.wixsite.com/voyages/portugal"
+                                    target="_self" class="" tabindex="-1">Portugal</a></li>
+                            <li><a data-testid="linkElement" href="https://maisouestelle.wixsite.com/voyages/royaume-uni"
+                                    target="_self" class="" tabindex="-1">Royaume-Uni</a></li>
+                            <li><a data-testid="linkElement" href="https://maisouestelle.wixsite.com/voyages/benelux"
+                                    target="_self" class="" tabindex="-1">Benelux</a></li>
+                            <li><a data-testid="linkElement" href="https://maisouestelle.wixsite.com/voyages/scandinavie"
+                                    target="_self" class="" tabindex="-1">Scandinavie</a></li>
+                        </ul>
+                    </li>
+                    <li id="nav__element">
+                        <p>— Amériques —</p>
+                        <ul aria-hidden="true" style="display:none">
+                            <li><a data-testid="linkElement" href="https://maisouestelle.wixsite.com/voyages/canada"
+                                    target="_self" class="" tabindex="-1">Canada</a></li>
+                            <li><a data-testid="linkElement" href="https://maisouestelle.wixsite.com/voyages/etats-unis"
+                                    target="_self" class="" tabindex="-1">États-Unis</a></li>
+                            <li><a data-testid="linkElement" href="https://maisouestelle.wixsite.com/voyages/mexique"
+                                    target="_self" class="" tabindex="-1">Mexique</a></li>
+                            <li><a data-testid="linkElement" href="https://maisouestelle.wixsite.com/voyages/cuba"
+                                    target="_self" class="" tabindex="-1">Cuba</a></li>
+                            <li><a data-testid="linkElement" href="https://maisouestelle.wixsite.com/voyages/costa-rica"
+                                    target="_self" class="" tabindex="-1">Costa Rica</a></li>
+                            <li><a data-testid="linkElement" href="https://maisouestelle.wixsite.com/voyages/colombie"
+                                    target="_self" class="" tabindex="-1">Colombie</a></li>
+                        </ul>
+                    </li>
+                    <li id="nav__element">
+                        <p>— Asie —</p>
+                        <ul aria-hidden="true" style="display:none">
+                            <li><a data-testid="linkElement" href="https://maisouestelle.wixsite.com/voyages/thailande"
+                                    target="_self" class="" tabindex="-1">Thailande</a></li>
+                        </ul>
+                    </li>
+                    <li id="nav__element">
+                        <p>— Océanie —</p>
+                        <ul aria-hidden="true" style="display:none">
+                            <li><a data-testid="linkElement"
+                                    href="https://maisouestelle.wixsite.com/voyages/polynesie-francaise" target="_self"
+                                    class="" tabindex="-1">Polynésie Française</a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+
+            </nav>
+        </div>
+ 
+    </header>
+
+    <!-- JS scripts -->
+    <script src="js/menu.js"></script>
 </body>
+
 </html>
