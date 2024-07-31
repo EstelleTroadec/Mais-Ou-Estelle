@@ -6,10 +6,6 @@ Projet de blog de voyages afin d'inspirer les utilisateurs pour l'organisation d
 
 On y trouvera des articles classés par destinations, des restaurants et lieux d'intérêts, des coups de coeur, une idée de budget, etc.
 
-## La cible
-
-Voyageurs solitaires à budget limité (étudiants, jeunes diplômés, personnes à petits revenus...).
-
 ## Stack technique
 
 ### Langages

@@ -1,11 +1,4 @@
 /* text */
-@font-face {
-  font-family: 'Chelsea Market';
-  src: url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 
   
   /* icons */
@@ -16,6 +9,7 @@
     font-style: normal;
     font-display: block;
   }
+  
   
   [class^="icon-"], [class*=" icon-"] {
     font-family: 'icomoon' !important;

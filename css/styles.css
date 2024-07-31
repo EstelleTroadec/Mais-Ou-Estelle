@@ -1,13 +1,19 @@
 /* common */
  
   html {
-    --light-redish: #f0cdcf;
-    --redish: #b58284;
-    --dark-redish: #903329;
-    --light-leave-color: #65947b;
-    --leave-color: #4C6D5A;
-    --dark-leave-color: #283d30;
-    --sandy-color: #fae8d3;
+    /* redish */
+   /*  --cloud-color: #f0cdcf;
+    --nav-bg-color: #b58284;
+    --darker-nav-color: #903329;
+    --hover-color: #903329;
+    --main-bg-color: #fae8d3; */
+
+    /* blue lagoon */
+    --cloud-color: #c4eff9;
+    --nav-bg-color: #8ee4f5;
+    --darker-nav-color: #358494;
+    --hover-color: #d89bfb;
+    --main-bg-color: #e2eaec;
 
   }
   
@@ -29,7 +35,7 @@
 
   @media (max-width: 60em) {
     a:hover, button:hover {
-      color: var(--light-leave-color);
+      color: var(--hover-color);
     }
   }
   
@@ -38,7 +44,7 @@
   /* HEADER */
 
 .header {
-  background-color: var(--redish)
+  background-color: var(--nav-bg-color)
 }
 
 .header__container {
@@ -48,7 +54,7 @@
 }
 
 .header__cloud {
-  fill: var(--light-redish);
+  fill: var(--cloud-color);
   width: 15rem;
   padding: 1rem;
 }
@@ -98,11 +104,11 @@
 .burger-menu {
   display: block;
   font-size: 2rem;
-  background-color: #d48ddd;
-  border: solid 2px var(--light-redish);
+  background-color: var(--darker-nav-color);
+  border: solid 2px var(--cloud-color);
   border-radius: 0.4rem;
   margin-right: 1.2rem;
-  color: var(--light-redish);
+  color: var(--cloud-color);
   padding: 0.5rem;
 }
 
@@ -112,12 +118,9 @@
   font-family: 'Amatic SC', sans-serif;
   text-align: center;
   font-size: 1.5rem;
+  position: relative;
   
   border-radius: 0.4rem;
-}
-
-.nav__list li {
-  margin-bottom: 1.5rem;
 }
 
 .active {
@@ -126,25 +129,48 @@
   justify-content: space-between;
   font-size: 2rem;
   padding: 1rem;
-  background-color: var(--light-redish);
-
-  justify-content: space-around;
+  background-color: var(--cloud-color);
 
   position: absolute;
   top: 8.2rem;
   right: 0;
   width: 50%;
 
-  border: solid 2px var(--redish);
+  border: solid 2px var(--nav-bg-color);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 
 }
 
-/* for desktop */
+.nav_element {
+  position: relative;
+}
+
+.countries-list {
+  display: none;
+  position: relative;
+  top: 100%;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  text-align: end;
+}
+
+.country a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--darker-nav-color);
+  padding: 0.5rem 1rem;
+  display: block;
+  
+}
+
+
+/* HEADER FOR DESKTOP */
 @media (min-width: 769px) {
   
+  /* titles & images */
   .header__cloud {
-    fill: var(--light-redish);
+    fill: var(--cloud-color);
     width: 15rem;
     padding: 2rem;
   }
@@ -168,13 +194,17 @@
   }
 
 
+  /* navigation */
   .burger-menu {
     display: none;
 }
 
+
   .nav {
-      margin: auto;
-      bottom: 0;
+      display: flex;
+      padding-left: 0;
+      margin-top: auto;
+      margin-bottom: 0;
   }
 
   .nav__list {
@@ -184,35 +214,59 @@
     
   }
   
-  .nav__list li {
+  .nav__element {
     position: relative;
     font-size: 2.3rem;
-    margin-right: 9rem;
+    margin: 0 4.5rem;
   }
   
   /* add a line above each elements of the nav list */
-  .nav__list li::before {
+  .nav__element::before {
     content: '';
     position: absolute;
     top: -10px;
     left: 0;
     right: 0;
-    height: 2px; /* line height */
+    height: 0.1rem; /* line height */
     background-color: #000;
   }
 
-  .nav__list li:hover::before {
-    background-color: var(--light-leave-color); /* change the color of the line when hovered */
+  .nav__element:hover::before {
+    background-color: var(--hover-color); /* change the color of the line when hovered */
+    height: 0.3rem;
   }
 
-
-  
-  .nav__list li:hover {
-    transform: scale(1.2);
+  li:hover {
     cursor: pointer;
     
   }
+
+/* continent list */
+
+
+.countries-list {
+  display: none;
+  position: absolute;
+  top: 100%;  /* show the list under the parent */
+  left: 50%;
+  transform: translateX(-50%);
+  width:max-content;
+  background-color: var(--cloud-color); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  list-style: none;
+  text-align: center;
+  padding: 0.5rem 0;
 }
 
+.country {
+  text-align: none;
+  color: inherit;
+  padding: 0.5rem;
+  display: block;
+  
+}
+  
+}
 
 
