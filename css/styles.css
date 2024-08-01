@@ -19,7 +19,6 @@
     --redish-button: #b58284;
     --blue-button: #8ee4f5;
     --green-button: #6C977D;
-
   }
   
   body {
@@ -94,7 +93,7 @@
   font-weight: 700;
 
   position: relative;
-  margin-left: 7rem;
+  margin-left: 5rem;
   font-size: 1.5rem;
   box-sizing: border-box; 
   overflow: visible; 
@@ -181,19 +180,19 @@
   
   .header__logo {
     position: absolute;
-    top: 1.1rem;
-    left: 2.8rem;
+    top: 0.8rem;
+    left: 1.8rem;
   }
   
   .header__title {
     font-family: 'Chelsea Market', sans-serif;
     color: rgb(56, 56, 56);
-    font-size: 2.5rem;
+    font-size: 2rem;
   
     width: 15rem;
   
     position: absolute;
-    top: 5.2rem;
+    top: 5rem;
     left: 2.8rem;
   }
 
@@ -290,13 +289,13 @@
 .color-change__buttons {
   display: flex;
   justify-content: space-between;
-  width: 6rem;
+  width: 10rem;
   margin: 0.7rem;
 }
 
 .color-button {
-  width: 1rem;
-  height: 1rem;
+  width: 2rem;
+  height: 2rem;
   border: 0.3px solid black;
   border-radius: 50%;
 }
@@ -352,8 +351,23 @@
 
 /* MAIN FOR DESKTOP */
 @media (min-width: 769px) {
+
+
+  /* COLOR CHANGE ZONE */
+.color-change__buttons {
+  width: 6rem;
+}
+
+  .color-button {
+    width: 1rem;
+    height: 1rem;
+    border: 0.3px solid black;
+    border-radius: 50%;
+  }
+
+  /* ARTICLES */
   .articles-container {
-    padding: 6rem; 
+    padding: 1rem 6rem; 
   }
 
   .article {

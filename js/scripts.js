@@ -44,6 +44,6 @@ document.addEventListener('DOMContentLoaded', function () {
         header.style.backgroundColor = '#6C977D';
         cloud.style.fill = '#a5b7ac';
     });
+
     
-      
 });
