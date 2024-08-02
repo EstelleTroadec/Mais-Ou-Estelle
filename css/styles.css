@@ -207,7 +207,7 @@
     display: flex;
     padding-left: 0;
     margin-top: auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 
     width: 100%;
     padding: 1rem;
@@ -224,10 +224,10 @@
 
   .nav__element {
     position: relative;
-    font-size: 1.8rem;
+    font-size: 2rem;
     justify-content: space-between;
     width: 100%;
-    margin: 0 1rem;
+    margin: 0 1.5rem;
   }
 
   /* add a line above each elements of the nav list */
@@ -250,7 +250,7 @@
 
   /* titles & images */
   .header__cloud {
-    width: 13rem;
+    width: 15rem;
   }
 
 
@@ -264,7 +264,7 @@
     display: flex;
     padding-left: 0;
     margin-top: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     width: 100%;
     padding: 1rem;
@@ -281,10 +281,10 @@
   
   .nav__element {
     position: relative;
-    font-size: 2rem;
+    font-size: 2.5rem;
     justify-content: space-around;
     width: 100%;
-    margin: 0 2rem;
+    margin: 0 4rem;
   }
   
   /* add a line above each elements of the nav list */
