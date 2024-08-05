@@ -16,7 +16,7 @@
     --darker-nav-color: #358494;
     --hover-color: #d89bfb;
     /* --main-bg-color: #f9f4ed; */
-    --main-bg-color: #e2eaec;
+    --main-bg-color: #fae8d3;
 
     --redish-button: #b58284;
     --blue-button: #8ee4f5;
@@ -160,7 +160,7 @@
 .country a{
   text-decoration: none;
   font-size: 1.5rem;
-  color: var(--darker-nav-color);
+  color: rgb(122, 118, 118);
   padding: 0.5rem 1rem;
   display: block; 
 }
@@ -322,7 +322,7 @@
   left: 50%;
   transform: translateX(-50%);
   width:max-content;
-  background-color: var(--main-bg-color); 
+  background-color: white; 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   border-radius: 1rem;
   list-style: none;
