@@ -17,10 +17,10 @@ const continentCountryMap = {
    "Europe": [
     { name: "Espagne", link: "/countries/espagne" },
     { name: "Portugal", link: "/countries/portugal" },
-    { name: "Norvège", link: "/countries/norvege" }
+    { name: "Norvège", link: "/countries/norvege" },
+    { name: "Royaume-Uni", link: "/countries/royaume-uni" }
   /* { name: "Danemark", link: "/countries/danemark" },
-    { name: "Benelux", link: "/countries/benelux" },
-    { name: "Royaume-Uni", link: "/countries/royaume-uni" },  */
+    { name: "Benelux", link: "/countries/benelux" },  */
   ].sort((a, b) => a.name.localeCompare(b.name)),
   "Asie": [
     { name: "Thailande", link: "/countries/thailande" },
