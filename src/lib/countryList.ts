@@ -5,10 +5,10 @@ const continentCountryMap = {
     { name: "Mexique", link: "/countries/mexique" }
   ].sort((a, b) => a.name.localeCompare(b.name)),
   "Amérique Centrale & Caraïbes": [
-    { name: "Costa Rica", link: "/countries/costa-rica" }
-  /* { name: "Cuba", link: "/countries/cuba" },
-    { name: "Guatemala, link: "/countries/guatemala" },
-    { name: "République Dominicaine", link: "/countries/republique-dominicaine" }, */
+    { name: "Costa Rica", link: "/countries/costa-rica" },
+    { name: "Guatemala", link: "/countries/guatemala" },
+    { name: "République Dominicaine", link: "/countries/republique-dominicaine" },
+    { name: "Cuba", link: "/countries/cuba" }
   ].sort((a, b) => a.name.localeCompare(b.name)),
   "Amérique du Sud": [
     /* { name: "Brésil", link: "/countries/bresil" }, */

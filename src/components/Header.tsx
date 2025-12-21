@@ -170,7 +170,7 @@ export const Header = () => {
                                 <ul className="inline-flex space-x-4 font-poppins text-sm">
                                     {countries.map((country) => (
                                         <Link key={country.name} href={country.link} onClick={handleLinkClick}>
-                                            <li>{country.name}</li>
+                                            <li className="px-1">{country.name}</li>
                                         </Link>
                                     ))}
                                 </ul>

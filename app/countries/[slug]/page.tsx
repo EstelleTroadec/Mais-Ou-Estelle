@@ -109,8 +109,9 @@ export default async function CountryPage(props: { params: Promise<{ slug: strin
       </div>
       <div className="m-auto w-4/5 space-y-4 md:mx-auto md:w-[90%] lg:mx-auto">
         <h1 className="ml-1 mt-12 font-poppins text-xl font-semibold text-title md:ml-3 md:text-3xl">Tous mes articles sur {countryPage.article} {countryPage.name} </h1>
+        {sortedPosts && sortedPosts.length > 0 ? (
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:justify-center">
-          {sortedPosts?.map((post) => (
+          {sortedPosts.map((post) => (
             <Card key={post.slug} className="flex flex-col gap-2">
               <CardHeader>
                   <CardImage src={post.mainImage} alt={post.title} />
@@ -136,6 +137,9 @@ export default async function CountryPage(props: { params: Promise<{ slug: strin
             </Card>
           ))}
         </div>
+        ) : (
+          <p className="px-8 py-2 text-lg text-muted-foreground">Un peu de patience, ça arrive... ⌛️</p>
+        )}
       </div>
     </div>
   );
