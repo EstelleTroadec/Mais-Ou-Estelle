@@ -8,8 +8,7 @@ const continentCountryMap = {
     { name: "Costa Rica", link: "/countries/costa-rica" }
   /* { name: "Cuba", link: "/countries/cuba" },
     { name: "Guatemala, link: "/countries/guatemala" },
-    { name: "République Dominicaine", link: "/countries/republique-dominicaine" },
-    { name: "Brésil", link: "/countries/bresil" },  */
+    { name: "République Dominicaine", link: "/countries/republique-dominicaine" }, */
   ].sort((a, b) => a.name.localeCompare(b.name)),
   "Amérique du Sud": [
     /* { name: "Brésil", link: "/countries/bresil" }, */
@@ -17,8 +16,9 @@ const continentCountryMap = {
   ].sort((a, b) => a.name.localeCompare(b.name)),
    "Europe": [
     { name: "Espagne", link: "/countries/espagne" },
-  /* { name: "Portugal", link: "/countries/portugal" },
-    { name: "Scandinavie", link: "/countries/scandinavie" },
+    { name: "Portugal", link: "/countries/portugal" },
+    { name: "Norvège", link: "/countries/norvege" }
+  /* { name: "Danemark", link: "/countries/danemark" },
     { name: "Benelux", link: "/countries/benelux" },
     { name: "Royaume-Uni", link: "/countries/royaume-uni" },  */
   ].sort((a, b) => a.name.localeCompare(b.name)),
